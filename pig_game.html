@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+
+    <button class="show-modal">Rules</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Rules for the Game</h1>
+      <p>
+        1. Roll the dice and the number will be added to your current score.
+      </p>
+      <p>
+        2. If you roll a one, you lose your current score and the round switches
+        to your opponent.
+      </p>
+      <p>
+        3. If you are happy with your current score, click on hold and save your
+        current score. And the round will switch to your opponent.
+      </p>
+      <p>4. Play until one of you have a score of at least 100.</p>
+      <p>
+        5. When the game ends, if you want to play again, simply click on new
+        round to keep playing.
+      </p>
+      <p>6. If you want to start an entirely new game, click on new game.</p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <button class="btn--show-modal">Change names</button>
+    
+    <div class="enter-name">
+      <p class="close-modal-2">&times;</p>
+      <h1 class="change--name" id="change--0">Enter your Names</h1>
+      <p>
+      <input
+        type="text"
+        id="name-text-1"
+        placeholder="PLAYER 1 NAME:"
+        class="input__name input__name--player-1"
+      </p>
+      />
+      <input type="text" id="name-text-2" placeholder="PLAYER 2 NAME:"
+      class="input__name input__name--player-2"
+      
+      <div class="modal1 modal1--hidden"
+    </div>
+    <button class="names" id="user-name">DONE</button>
+  </div>
+  <div class="overlay1 overlay1--hidden"></div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
